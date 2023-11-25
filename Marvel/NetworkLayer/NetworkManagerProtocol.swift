@@ -7,4 +7,10 @@
 
 import Foundation
  
-class NetworkManagerProtocol{}
+protocol NetworkManagerProtocol{
+    
+    func fetchData<T:Codable>(url:URL,complition : @escaping (T?,Error?) -> () )
+    
+}
+    
+
